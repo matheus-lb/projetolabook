@@ -1,0 +1,1 @@
+{"version":3,"file":"getAllFeedData.js","sourceRoot":"","sources":["../../src/data/getAllFeedData.ts"],"names":[],"mappings":";;;;;;;;;;;;;;AAAA,kEAA0C;AAG1C,MAAqB,cAAe,SAAQ,sBAAY;IAG9C,OAAO,CAAE,IAAW;;YACrB,MAAM,MAAM,GAAG,MAAM,IAAI,CAAC,UAAU,CAAC,GAAG,CAAC;;4BAEtB,IAAI;UACtB,CAAC,CAAA;YAEF,OAAO,MAAM,CAAC,CAAC,CAAC,CAAA;QACrB,CAAC;KAAA;CACJ;AAXD,iCAWC"}

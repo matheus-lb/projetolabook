@@ -1,0 +1,1 @@
+{"version":3,"file":"GetPostByIdData.js","sourceRoot":"","sources":["../../src/data/GetPostByIdData.ts"],"names":[],"mappings":";;;;;;;;;;;;;;AAAA,kEAA0C;AAG1C,MAAqB,WAAY,SAAQ,sBAAY;IAG3C,WAAW,CAAE,MAAa;;YAC5B,MAAM,MAAM,GAAG,MAAM,IAAI,CAAC,UAAU,CAAC,GAAG,CAAC;;0BAEvB,MAAM;SACvB,CAAC,CAAA;YACF,OAAO,MAAM,CAAC,CAAC,CAAC,CAAA;QACpB,CAAC;KAAA;CACJ;AAVD,8BAUC"}
