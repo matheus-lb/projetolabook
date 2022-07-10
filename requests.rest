@@ -1,0 +1,84 @@
+
+// Cria uma conta de usuário
+POST http://localhost:3003/signup
+Content-Type: application/json
+
+{
+    "name":"lima",
+    "email":"lima@email.com",
+    "password":"password"
+}
+###
+
+// Faz login do usuário
+POST http://localhost:3003/login
+Content-Type: application/json
+
+{
+     "email" : "gloria@email.com",
+     "password":"password"
+}
+
+###
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ1MTgzYjA1LWMxMTQtNDZhMi1iNmZhLTliYmI4MWI2NTgxMiIsImlhdCI6MTY1NzM0OTU4MSwiZXhwIjoxNjU3NDM1OTgxfQ.LGrsvltW2hIjXdHjhIuXQMPy0nPl6vKSjdXaTXT1BLg
+
+
+// Recebe um token e cria um post do usuário
+POST http://localhost:3003/user/createPost
+Authorization: {{token}}
+Content-Type: application/json
+
+{
+    "photo":"photo",
+    "description":"foto da gloria",
+    "type":"normal"
+}
+###
+
+
+// Busca um post por id
+GET http://localhost:3003/user/post/:id
+Authorization: {{token}}
+Content-Type: application/json
+###
+
+// Cria uma relação de amizade entre usuários, recebe o id do usuário  que se deseja iniciar amizade
+POST http://localhost:3003/user/createFriend/:id
+Authorization: {{token}}
+Content-Type: application/json
+###
+
+
+// Desfaz amizade, recebe o id do usuario a qual deseja-se desfaze-la
+DELETE http://localhost:3003/user/deleteFriend/:id
+Authorization: {{token}}
+Content-Type: application/json
+###
+
+
+// Busca o feed de posts dos amigos do usuário
+GET http://localhost:3003/user/feed
+Authorization: {{token}}
+Content-Type: application/json
+###
+
+
+// Busca o feed de todos os posts separando-os pelos tipos normal ou event
+GET http://localhost:3003/AllFeed/:type
+Content-Type: application/json
+
+###
+
+
+// recebe o id de um post para curti-lo
+POST http://localhost:3003/user/likePost/:id
+Authorization: {{token}}
+Content-Type: application/json
+
+###
+
+// Recebe o id de um post para descuti-lo
+DELETE http://localhost:3003/user/unlikePost/:id
+Authorization: {{token}}
+Content-Type: application/json
+
